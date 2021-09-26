@@ -7,7 +7,8 @@ app = Flask(__name__)
 def hello_world():
     # return 'Hello World!!! Python'
     name = 'Yuriy'
-    return render_template('index.html', title='Welcome', username=name)
+    a = 1 + 4
+    return render_template('index.html', title='Welcome', username=name, a=a)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
